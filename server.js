@@ -18,6 +18,8 @@ app.get('/', (req, res) => {
 app.get('/add', router);
 app.get('/list', router);
 app.get('/get/:productID', router);
+app.put('/edit/:productID', router);
+app.delete('/delete/:productID', router);
 
 
 const PORT = 8080;

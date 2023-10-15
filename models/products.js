@@ -11,4 +11,6 @@ const product = new Schema({
     category: String
 })
 //using mongoose model function it exprots the product schema object
+
 module.exports = mongoose.model('Product', product);
+
