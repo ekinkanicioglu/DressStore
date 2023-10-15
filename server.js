@@ -14,12 +14,13 @@ app.get('/', (req, res) => {
     res.send(message);
   });
   
+app.use(router);
 
-app.get('/add', router);
-app.get('/list', router);
-app.get('/get/:productID', router);
-app.put('/edit/:productID', router);
-app.delete('/delete/:productID', router);
+// app.get('/add', router);
+// app.get('/list', router);
+// app.get('/get/:productID', router);
+// app.use('/edit/:productID', router);
+// app.use('/delete/:productID', router);
 
 
 const PORT = 8080;

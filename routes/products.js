@@ -8,7 +8,7 @@ console.log("here in router");
 router.get('/list', productsController.list);
 router.get('/add', productsController.add);
 router.get('/get/:productID', productsController.productByID);
-router.put('/edit/:productID', productsController.update);
-router.delete('/delete/:productID', productsController.remove);
+router.get('/edit/:productID', productsController.update);
+router.get('/delete/:productID', productsController.remove);
 
 module.exports = router;

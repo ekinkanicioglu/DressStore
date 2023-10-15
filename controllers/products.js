@@ -56,6 +56,7 @@ module.exports.productByID = async function (req, res, next) {
 
 module.exports.update = async function (req, res, next) {
     try {
+        console.log("in update controller");
         
         result  = await product.updateOne({_id : req.params.productID},  product(req.body));
         console.log(result);
